@@ -1,0 +1,26 @@
+{
+  "name": "tsnodeserve",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run tsc & npm run serve",
+    "tsc": "tsc -w",
+    "serve": "cd dist && nodemon index.js --ignore src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mleyb/tsnodeserve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mleyb/tsnodeserve/issues"
+  },
+  "homepage": "https://github.com/mleyb/tsnodeserve#readme",
+  "devDependencies": {
+    "@types/node": "^7.10.7",
+    "nodemon": "^1.11.0",
+    "typescript": "^2.1.6"
+  }
+}
