@@ -1,7 +1,7 @@
-FROM node:8-alpine
+FROM node:lts-alpine
 WORKDIR /app
-COPY package.json /app
+COPY package.json package-lock.json ./
 RUN npm install
-COPY /dist /app
+COPY . ./
+RUN npm run build
 CMD node index.js
-EXPOSE 8083
